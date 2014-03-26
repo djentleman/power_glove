@@ -48,3 +48,4 @@ The data is wrapped into a char data type, and send down the serial link
 
 ![](https://raw.githubusercontent.com/djentleman/power_glove/master/img/power%20glove%201.jpg "")
 ![](https://raw.githubusercontent.com/djentleman/power_glove/master/img/power%20glove%202.jpg "")
+![](https://raw.githubusercontent.com/djentleman/power_glove/master/img/power%20glove%203.jpg "")
