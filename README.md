@@ -8,7 +8,6 @@ proof of concept usb peripheral - inspired by the [power glove of old](http://en
 ####Microprocessor
 
 The glove is powered by an ATMEL ATMEGA 328P, as it is compatible with the arduino IDE for easy code load.
-
 The processor is clocked at 16MHz with a quartz crystal.
 
 ####Gyroscope
@@ -22,6 +21,16 @@ The conversion is done using a FT232R chip, the glove is connected to the hostin
 
 
 ###Firmware
+
+####I<sup>2</sup>C
+
+In order to read the gyroscope I am using the Wire, I2Cdev and MPU6050 arduino libraries.
+
+####Serial
+
+After reading the data from the I<sup>2</sup> device, I am scaling the data to a more manageable size, and formatting it into an unsigned 5 bit integer. The data is sent to the host machine in one byte packets, made up of a 3 bit ID 'header', and a 5 bit data 'body'. For instance the 'y' value from the gyroscope has an ID of 1, and if the data read from the accelerometer happened to be 18 (-14 if it were a signed integer), then the data packet would be:
+
+    001 10010
 
 
 
