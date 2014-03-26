@@ -42,3 +42,9 @@ The data is wrapped into a char data type, and send down the serial link
 ####Initializing Serial Connection
 
 ####Moving The Mouse
+
+
+##Images
+
+![](https://raw.githubusercontent.com/djentleman/power_glove/master/img/power%20glove%201.jpg "")
+![](https://raw.githubusercontent.com/djentleman/power_glove/master/img/power%20glove%202.jpg "")
