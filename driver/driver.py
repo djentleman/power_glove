@@ -32,11 +32,11 @@ def handlePacket(id, data, autoit):
         if id == 0:
             # move mouse up/down
             #win32api.SetCursorPos((mx, my + data))
-            autoit.MouseMove(mx, my + (-float(data) / 5.0), 0)
+            autoit.MouseMove(mx, my + (-float(data)), 0)
         else:
             # move mouse left/right
             #win32api.SetCursorPos((mx + data, my))
-            autoit.MouseMove(mx + (float(data) / 5.0), my, 0)
+            autoit.MouseMove(mx + (float(data)), my, 0)
     
             
 
